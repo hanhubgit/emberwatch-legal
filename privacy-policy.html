@@ -17,30 +17,43 @@
 <p>This policy describes how <strong>Emberwatch Uploader</strong> ("the app"), the private publishing tool of the Emberwatch Music YouTube channel, handles data.</p>
 
 <h2>Who uses the app</h2>
-<p>The app is used only by the owner of the Emberwatch Music channel to publish the channel's own content. It is not offered to the public.</p>
+<p>The app is used only by the owner of the Emberwatch Music channel to publish the channel's own content. It is not offered to the public and has no other users.</p>
 
 <h2>YouTube API Services</h2>
-<p>The app uses YouTube API Services. By using the app you agree to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's privacy practices are described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>The app uses YouTube API Services. By using the app you agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>. Google's privacy practices are described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2>What data the app accesses</h2>
 <ul>
-  <li>An OAuth access/refresh token for the channel owner's own Google account, used solely to upload videos and thumbnails and to set titles, descriptions, tags and publish times on the owner's own channel.</li>
-  <li>Basic channel information (channel ID and title) to confirm the upload goes to the correct channel.</li>
+  <li>An OAuth access/refresh token for the channel owner's own Google account, used solely to upload videos and thumbnails and to set titles, descriptions, tags and publish times on the owner's own channel (scope <code>youtube.upload</code>).</li>
+  <li>Basic channel information (channel ID and title) to confirm the upload goes to the correct channel (scope <code>youtube.readonly</code>).</li>
 </ul>
 <p>The app does not access, collect or store data about viewers or any other YouTube users.</p>
 
+<h2>How the data is used</h2>
+<p>The data above is used only to publish the channel's own videos. It is not used for analytics, profiling or advertising.</p>
+
 <h2>How data is stored and shared</h2>
-<p>The OAuth token is stored only on the channel owner's own computer or private server. It is never sold, shared with third parties or used for advertising.</p>
+<p>The OAuth token is stored only in a local file on the channel owner's own computer. It is not stored on any server operated by the app, and it is never sold, shared with third parties or used for advertising. The app does not share any API data with anyone.</p>
+
+<h2>Cookies and device data</h2>
+<p>The app is a command-line tool, not a website or web app. It does not place, access or recognise cookies or similar technologies on any device or browser, and it does not collect device information. These pages do not use cookies or analytics.</p>
+
+<h2>Data retention and deletion</h2>
+<ul>
+  <li>The OAuth token is kept only while the owner uses the app and is refreshed automatically by Google.</li>
+  <li>Channel information is read at upload time and is not stored.</li>
+  <li>The owner can delete the stored token at any time by deleting the local token file. It is also deleted within 7 days after access is revoked or the app is no longer used.</li>
+</ul>
 
 <h2>Revoking access</h2>
-<p>Access can be revoked at any time from the Google account security settings: <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. Revoking access stops the app from uploading; locally stored tokens are then deleted.</p>
+<p>Access can be revoked at any time from the Google security settings page: <a href="https://security.google.com/settings/security/permissions">security.google.com/settings/security/permissions</a>. Revoking access immediately stops the app from uploading.</p>
 
 <h2>Changes</h2>
 <p>Updates to this policy are published on this page with a new date.</p>
 
 <h2>Contact</h2>
-<p>Questions about this policy: via the <a href="https://www.youtube.com/@EmberwatchMusic/about">Emberwatch Music channel page</a>.</p>
+<p>Questions about this policy or requests about your data: open an issue at <a href="https://github.com/hanhubgit/emberwatch-legal/issues">github.com/hanhubgit/emberwatch-legal/issues</a> or contact us through the <a href="https://www.youtube.com/@EmberwatchMusic/about">Emberwatch Music channel page</a>.</p>
 
-<p><a href="index.html">← Home</a></p>
+<p><a href="index.html">← Home</a> · <a href="terms.html">Terms of Service</a></p>
 </body>
 </html>
